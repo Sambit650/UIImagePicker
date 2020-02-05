@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="imagePicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KXP-5I-M48">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="595"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Qm-lW-MdZ">
+                                <rect key="frame" x="0.0" y="596" width="375" height="51"/>
+                                <color key="backgroundColor" red="0.24749156591917135" green="0.82454192640000001" blue="0.66513545818865638" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="7MS-T5-rr6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="17"/>
+                                <inset key="imageEdgeInsets" minX="1" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="CHOOSE IMAGE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.88565212488174438" green="0.10334799438714981" blue="0.949207603931427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="imgChooseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QbP-yM-vEl"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="KXP-5I-M48" firstAttribute="trailing" secondItem="6Qm-lW-MdZ" secondAttribute="trailing" id="FGd-Fk-fi8"/>
+                            <constraint firstItem="6Qm-lW-MdZ" firstAttribute="top" secondItem="KXP-5I-M48" secondAttribute="bottom" constant="1" id="Wrj-ql-GOx"/>
+                            <constraint firstItem="KXP-5I-M48" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dVu-du-uyf"/>
+                            <constraint firstAttribute="trailing" secondItem="KXP-5I-M48" secondAttribute="trailing" id="g95-yp-1j7"/>
+                            <constraint firstAttribute="bottom" secondItem="6Qm-lW-MdZ" secondAttribute="bottom" constant="20" symbolic="YES" id="hG8-Jf-pvw"/>
+                            <constraint firstItem="KXP-5I-M48" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oRx-Qd-gah"/>
+                            <constraint firstItem="KXP-5I-M48" firstAttribute="leading" secondItem="6Qm-lW-MdZ" secondAttribute="leading" id="qRC-FY-G2D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="KXP-5I-M48" id="Me8-jd-FwM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.8" y="121.88905547226388"/>
+        </scene>
+    </scenes>
+</document>
